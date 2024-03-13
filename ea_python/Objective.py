@@ -5,4 +5,6 @@ class Objective:
         self.target_genes = target_genes
 
     def objective_function(self, genes: np.ndarray) -> float:
-        return np.sum((genes - self.target_genes) ** 2)
+        diff = genes - self.target_genes
+        #return diff @ diff.T
+        return np.sum(diff ** 2)
