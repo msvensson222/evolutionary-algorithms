@@ -4,8 +4,8 @@ from Objective import Objective
 
 if __name__ == "__main__":
     np.random.seed(1)
-    INDIVIDUAL_SIZE = 5
-    POPULATION_SIZE = 30
+    INDIVIDUAL_SIZE = 50
+    POPULATION_SIZE = 500
     CXPB = 0.25
     MUTPB = 0.25
     TOURNAMENT_SIZE = 3
